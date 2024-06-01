@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.active-nav-item {
+  @apply text-xl font-bold hover:underline underline;
+}
+
+.nav-item {
+  @apply text-xl font-bold hover:underline;
+}
+
+.active-sidebar-item {
+  @apply relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors bg-light-hard;
+}
+
+.sidebar-item {
+  @apply relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors hover:bg-light-hard;
+}
