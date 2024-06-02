@@ -1,1 +1,0 @@
-console.log(new Date("2024-03-12T19:37:07.745Z").toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' }))
