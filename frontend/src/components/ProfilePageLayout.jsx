@@ -3,13 +3,15 @@ import NavbarDynamic from "./NavbarDynamic";
 
 const ProfilePageLayout = ({ children }) => {
   return (
-    <div className="container mx-auto">
-      <NavbarDynamic
-        path={"/create-new-project"}
-        buttonName={"+ Create Project"}
-      />
-      {children}
-      <Footer />
+    <div>
+      <div className="flex flex-col h-[100vh] justify-between">
+        <NavbarDynamic
+          path={"/create-new-project"}
+          buttonName={"+ Create Project"}
+        />
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 };

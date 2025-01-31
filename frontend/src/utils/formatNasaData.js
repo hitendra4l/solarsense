@@ -87,7 +87,7 @@ export const formatNasaDataForMeteo = (data) => {
       nasaData[i].precipitation = parameterData.PRECTOTCORR_SUM[monthName] || 0;
       nasaData[i].rh = parameterData.RH2M[monthName] || 0;
       nasaData[i].tilt =
-        parameterData.SI_EF_TILTED_SURFACE_OPTIMAL_ANG[monthName] || 0;
+        parameterData.SI_TILTED_AVG_OPTIMAL_ANG[monthName] || 0;
     }
   }
 

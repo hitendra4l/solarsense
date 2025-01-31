@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const HomePageLayout = ({ children }) => {
   return (
-    <div className="container mx-auto">
+    <div className="mx-auto">
       <Navbar />
       {children}
       <Footer />

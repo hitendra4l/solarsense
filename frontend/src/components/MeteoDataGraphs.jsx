@@ -26,9 +26,7 @@ const MeteoDataGraphs = ({ data }) => {
   const wsData = formatNasaDataForCharts(data?.WS10M);
   const rhData = formatNasaDataForCharts(data?.RH2M);
   const precipitationData = formatNasaDataForCharts(data?.PRECTOTCORR_SUM);
-  const tiltData = formatNasaDataForCharts(
-    data?.SI_EF_TILTED_SURFACE_OPTIMAL_ANG
-  );
+  const tiltData = formatNasaDataForCharts(data?.SI_TILTED_AVG_OPTIMAL_ANG);
 
   return (
     <div className="flex flex-col gap-6 mt-16">

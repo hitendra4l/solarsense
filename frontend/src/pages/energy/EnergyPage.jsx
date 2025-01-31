@@ -81,8 +81,8 @@ const EnergyPage = () => {
   for (let i = 0; i < 12; i++) {
     const nasaParameters = nasaQueryData?.properties?.parameter;
 
-    const radiation = nasaParameters?.SI_EF_TILTED_SURFACE_OPTIMAL[MONTHS[i]];
-    const angle = nasaParameters?.SI_EF_TILTED_SURFACE_OPTIMAL_ANG[MONTHS[i]];
+    const radiation = nasaParameters?.SI_TILTED_AVG_OPTIMAL_ANG[MONTHS[i]];
+    const angle = nasaParameters?.SI_TILTED_AVG_OPTIMAL_ANG[MONTHS[i]];
 
     OptRadiationData.push(radiation);
     OptAngleData.push(angle);
@@ -387,7 +387,7 @@ const EnergyPage = () => {
                     {
                       label: "Generated Energy",
                       data: outputEnergy.map(
-                        (item, index) => item * MONTH_DAYS[index]
+                        (item, index) => item * MONTH_DAYS[index],
                       ),
                       backgroundColor: "#F7C95F",
                       borderColor: "#F7C95F",

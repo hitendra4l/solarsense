@@ -27,7 +27,7 @@ const TEAM = [
 const AboutPage = () => {
   return (
     <HomePageLayout>
-      <div className="px-6 mt-10">
+      <div className="px-6 mt-10 min-h-[70vh] flex justify-center items-center">
         <div className="w-fit mx-auto flex flex-col gap-8 items-center">
           <p className="text-2xl font-bold">
             The Passionate People Behind SolarSense
